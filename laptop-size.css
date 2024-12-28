@@ -1,0 +1,156 @@
+@media screen and (min-width:768px){
+    .content{
+        max-width:1200px;
+        margin: 0 auto;
+        /*centralizar*/
+    }
+    #nav-1 ul{
+        display:flex;
+        justify-content: flex-end;
+    }
+    #nav-1 a:hover{
+        color:#40a297;
+    }
+
+    #btn-login{
+        width:auto;
+        height:auto;
+    }
+
+    #nav-2 div#imagem-logo{
+        justify-content: left;
+    }
+
+    .nav-2-content{
+        display:flex;
+        justify-content: space-between;
+    }
+    #nav-2{
+        position:relative;
+    }
+
+    #nav-2 li{
+        display: inline-block;
+    }
+
+    #nav-2 li a{
+        display:inline-block;
+    }
+
+    
+    .menu-principal li{
+        cursor:pointer;
+    }
+
+    .menu-title{
+        font-size: 20px;
+    }
+    .menu-title:hover{
+        color:#40a297;
+        text-decoration: underline 8px;
+    }
+    
+    .dropdown-menu{
+        position: absolute;
+        left:0;
+        top:50px;
+        display: none !important;
+        background-color: #006272;
+        color:white;
+        height:auto;
+        width:100vw;
+        z-index:999;
+        padding:30px;
+    }
+    
+    .dropdown-menu a{
+        display: block;
+    }
+    
+    .dropdown:hover .dropdown-menu{
+        display: block !important;
+    }
+
+    .dropdown-menu-content{
+        display:flex;
+        justify-content: center;
+        gap:150px;
+        
+    }
+
+    .dropdown-menu-content a:hover{
+        color:white;
+        text-decoration: underline;
+    }
+
+
+    .submenu-1{
+        display: flex;
+        flex-direction: column;
+        border-left: 1px solid #4e8780;
+        padding-inline-start: 8px;
+        margin-left:8px;
+        margin-top:12px;
+        
+        
+    }
+    .submenu-1 li{
+        font-family:"Diodrum Regular" !important;
+        font-size:13px;
+    }
+    .submenu-title{
+        font-family: "Diodrum Semibold";
+    }
+
+    #imagem-inicio{
+        position:relative;
+    }
+
+    .tabs{
+        font-size: 18px !important;
+    }
+
+    #ofertas-inicio{
+        bottom:200px !important;
+    }
+
+    .btn-oferta-inicio{
+        bottom:140px !important;
+    }
+
+    #ofertas-inicio p{
+        font-size: 24px !important;
+    }
+    #ofertas-inicio h1{
+        font-size: 48px !important;
+        font-family: "Diodrum Semibold";
+        padding: 15px 0;
+    }
+    #ofertas-inicio #data-exploreEU{
+        font-size: 16px !important;
+    }
+
+    #ofertas-inicio a span{
+        font-size:14px;
+        padding:12px;
+    }
+
+    .btn-oferta-inicio{
+        font-size:14px !important;
+
+    }
+
+    #grid-container-offers{
+        display:grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    }
+    .container-lts-offers{
+        width:100% !important;
+    }
+    #heading-latest-offers{
+        display:flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}

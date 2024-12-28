@@ -1,0 +1,299 @@
+@font-face {
+  font-family: "Diodrum Medium";
+  src: url(fontes/Diodrum-Medium.ttf);
+}
+@font-face {
+  font-family: "Diodrum Light";
+  src: url(fontes/Diodrum-Light.ttf);
+}
+@font-face {
+  font-family: "Diodrum Regular";
+  src: url(fontes/Diodrum-Regular.ttf);
+}
+@font-face {
+  font-family: "Diodrum Semibold";
+  src: url(fontes/Diodrum-Semibold.ttf);
+}
+.div-2 {
+  position: relative;
+}
+.div-2 #slot-imagem-inicio {
+  position: relative;
+  max-height: 60vh;
+}
+.div-2 #imagem-inicio {
+  max-height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.div-2 p {
+  margin: 0px;
+}
+.div-2 .btn-oferta-inicio {
+  width: auto;
+  font-family: "Diodrum Medium";
+  font-size: 12px;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 2.25rem;
+  color: #006272;
+  position: absolute;
+  bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.div-2 .btn-oferta-inicio span {
+  padding: 8px 16px 6px 16px;
+}
+
+div#ofertas-inicio {
+  position: absolute;
+  bottom: 130px;
+  color: white;
+  letter-spacing: 0.05rem;
+}
+div#ofertas-inicio h1 {
+  text-shadow: #333 0.05em 0.05em 0.1em;
+  line-height: 30px;
+  font-size: 24px;
+  margin: 0px;
+  font-family: "Diodrum Semibold";
+}
+div#ofertas-inicio p#data-exploreEU {
+  font-size: 0.8em;
+  position: relative;
+  top: 5px;
+}
+
+div.painel-tabs {
+  display: grid;
+  grid-template-rows: 50px;
+  grid-template-columns: repeat(4, 1fr);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+div.painel-tabs div#flights {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  background-color: #006272;
+  border-radius: 10px 10px 0px 0px;
+  border: 0.5px solid #024a53;
+}
+div.painel-tabs div#manage {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  background-color: #006272;
+  border-radius: 10px 10px 0px 0px;
+  border: 0.5px solid #024a53;
+}
+div.painel-tabs div#check-in {
+  grid-row: 1/2;
+  grid-column: 3/4;
+  background-color: #006272;
+  border-radius: 10px 10px 0px 0px;
+  border: 0.5px solid #024a53;
+}
+div.painel-tabs div#flightstats {
+  grid-row: 1/2;
+  grid-column: 4/5;
+  background-color: #006272;
+  border-radius: 10px 10px 0px 0px;
+  border: 0.5px solid #024a53;
+}
+div.painel-tabs #flights, div.painel-tabs #manage, div.painel-tabs #check-in, div.painel-tabs #flightstats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.painel-tabs #flights .tabs, div.painel-tabs #manage .tabs, div.painel-tabs #check-in .tabs, div.painel-tabs #flightstats .tabs {
+  color: white;
+  font-size: 12px;
+  letter-spacing: 0.02rem;
+}
+
+.botoes {
+  padding: 17px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+  color: #2C2A29;
+  font-size: 14px;
+  font-family: "Diodrum Medium";
+}
+.botoes #multi-city {
+  justify-self: flex-end;
+  font-size: 14px;
+  place-self: center;
+}
+.botoes .check-roundtrip, .botoes .check-oneway {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+.botoes input[type=radio] {
+  width: 25px;
+  height: 30px;
+}
+
+form#formulario-inicio {
+  background-color: #F9F9F9;
+  box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 8px 8px;
+}
+form#formulario-inicio .from-to {
+  padding: 8px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+form#formulario-inicio .from-to .caixa-forms {
+  height: 50px;
+  padding: 0px 5px;
+  border: 1px solid #cacaca;
+  border-radius: 6px;
+  font-family: "Diodrum Regular";
+  color: #333;
+  font-size: 1em;
+  justify-content: center;
+}
+form#formulario-inicio .calendar-display {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows: 50px;
+  gap: 8px;
+}
+form#formulario-inicio .calendar {
+  height: 100%;
+  flex-grow: 1;
+  padding: 0px 5px;
+  border: 1px solid #cacaca;
+  border-radius: 6px;
+  font-family: "Diodrum Regular";
+  color: #333;
+  font-size: 1em;
+  justify-content: center;
+  align-items: center;
+}
+form#formulario-inicio .c1 {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+form#formulario-inicio .c2 {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+form#formulario-inicio .passenger-list {
+  height: 50px;
+  flex-grow: 1;
+  padding: 0px 5px;
+  border: 1px solid #cacaca;
+  border-radius: 6px;
+  font-family: "Diodrum Medium";
+  color: #333;
+  font-size: 1em;
+  justify-content: center;
+}
+form#formulario-inicio #btn-search-flights {
+  width: 100%;
+  height: 60px;
+  border-radius: 35px;
+  background-color: #006272;
+  color: white;
+  border: 1px solid #006272;
+  font-size: 16px;
+  font-family: "Diodrum Medium";
+  letter-spacing: 0.05rem;
+  justify-content: center;
+}
+form#formulario-inicio #promo-code {
+  font-family: "Diodrum Medium";
+  margin: 18px 0px;
+  background-color: transparent;
+  border-color: transparent;
+  color: #006272;
+  font-size: 16px;
+}
+
+.latest-offers {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 60px 0px;
+}
+.latest-offers h2 {
+  font-family: "Diodrum Semibold";
+  margin-bottom: 0px;
+  font-size: 32px;
+  color: #2C2A29;
+}
+.latest-offers #all-offers-link {
+  font-family: "Diodrum Medium";
+  font-size: 16px;
+}
+.latest-offers #grid-container-offers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: auto;
+  white-space: nowrap;
+  width: 100%;
+  font-family: "Diodrum Light";
+  line-height: 20px;
+}
+.latest-offers .container-lts-offers {
+  box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  width: 260px;
+  margin: 8px;
+}
+.latest-offers #brussels, .latest-offers #paris, .latest-offers #madrid, .latest-offers #rome {
+  color: #2C2A29;
+  font-size: 20px;
+  padding: 0 16px;
+}
+.latest-offers #brussels h5 span, .latest-offers #paris h5 span, .latest-offers #madrid h5 span, .latest-offers #rome h5 span {
+  font-weight: bold;
+  font-family: "Diodrum Medium";
+  font-size: 18px;
+}
+.latest-offers #brussels p, .latest-offers #paris p, .latest-offers #madrid p, .latest-offers #rome p {
+  font-size: 14px;
+  color: #63666A;
+  margin: 2px;
+}
+.latest-offers #brussels p span, .latest-offers #paris p span, .latest-offers #madrid p span, .latest-offers #rome p span {
+  font-size: 24px;
+  color: #2C2A29;
+  font-family: "Diodrum Regular";
+  font-weight: normal;
+  line-height: 1.4em;
+}
+.latest-offers #brussels .book-now-btn, .latest-offers #paris .book-now-btn, .latest-offers #madrid .book-now-btn, .latest-offers #rome .book-now-btn {
+  padding: 16px 0;
+  display: flex;
+  border-top: 2px solid #F9F9F9;
+}
+.latest-offers #brussels .book-now-btn p, .latest-offers #paris .book-now-btn p, .latest-offers #madrid .book-now-btn p, .latest-offers #rome .book-now-btn p {
+  color: #006272;
+  font-family: "Diodrum Medium";
+  font-size: 16px;
+  flex-grow: 1;
+}
+.latest-offers #brussels .book-now-btn div, .latest-offers #paris .book-now-btn div, .latest-offers #madrid .book-now-btn div, .latest-offers #rome .book-now-btn div {
+  width: 30px;
+  height: 30px;
+  background-color: #84bd00;
+  border-radius: 200px;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=style2.css.map */
